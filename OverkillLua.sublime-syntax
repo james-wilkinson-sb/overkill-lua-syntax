@@ -68,7 +68,7 @@ contexts:
             0: punctuation.definition.comment.lua
           pop: true
     # Invalid preprocessors
-    - match: '(#[a-zA-Z_]+) ([a-zA-Z_]+).*$\n?'
+    - match: '(#[a-zA-Z_]+) ([a-zA-Z_]+)\s*{.*$\n?'
       push: preprocessor-error
       captures:
         2: meta.overkill.preprocessor.tag
